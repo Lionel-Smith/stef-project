@@ -1,4 +1,3 @@
-import tests_function
 from src import app
 from flask import request, jsonify, request
 from werkzeug.exceptions import BadRequest
@@ -6,7 +5,6 @@ from src.stef_project.DTO.car_DTO import carDTO
 from src.stef_project.enums.exceptionMessages import UserExceptions
 from src.stef_project.car_repo import CarRepo
 from tests_function import example_test
-from  NIB_utils import NIB_utils 
 
 class CarService():
     def __init__(self) :
