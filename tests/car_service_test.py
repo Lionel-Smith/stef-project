@@ -21,6 +21,5 @@ class MockCarWashService(unittest.TestCase):
         self.car_color = "Beige"
         self.is_dirty = True
         self.hours_parked = 8
-        self.price = 0
-        self.assertIsNot(self.car_service.add_car(self.license_plate, self.car_color, self.is_dirty, self.hours_parked, self.price), None)
+        self.assertIsNot(self.car_service.add_car(self.license_plate, self.car_color, self.is_dirty, self.hours_parked, ), None)
 
