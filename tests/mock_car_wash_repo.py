@@ -1,4 +1,3 @@
-from tests.car_service_test import MockCarWashService
 from src.stef_project.DTO.car_DTO import carDTO
 from src.models.car_model import CarModel, db
 from werkzeug.exceptions import BadRequest
