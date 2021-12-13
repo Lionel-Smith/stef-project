@@ -14,7 +14,7 @@ class CarService():
         rate =7
         price = hours_parked*rate 
         if car_color in self.colors:
-            price= 0.0
+            price= 0.2
             if is_dirty == True:
                 price = (rate*hours_parked)/2
         else :
