@@ -1,4 +1,4 @@
-from tests.mock_car_wash_repo import MockCarWashRepo
+from test.mock_car_wash_repo import MockCarWashRepo
 from werkzeug.exceptions import BadRequest
 from src.stef_project.DTO.car_DTO import carDTO
 from src.stef_project.enums.exceptionMessages import UserExceptions
@@ -22,4 +22,5 @@ class MockCarWashService(unittest.TestCase):
         self.is_dirty = True
         self.hours_parked = 8
         self.assertIsNot(self.car_service.add_car(self.license_plate, self.car_color, self.is_dirty, self.hours_parked, ), None)
+        print (self.car_color)
 
