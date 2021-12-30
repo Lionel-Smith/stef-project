@@ -1,5 +1,6 @@
 from enum import Enum
 
+
 class UserExceptions(Enum):
     PLATE_NOT_FOUND = "license Plate is required"
     CAR_NOT_FOUND = "Car Not Found"
