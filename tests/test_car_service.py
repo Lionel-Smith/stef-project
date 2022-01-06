@@ -15,22 +15,28 @@ class MockCarWashService(unittest.TestCase):
         self.is_dirty = False
         self.hours_parked = 12
         self.price = 0
+   
+    def square(n):
+        return n*n
+
+    def test_square(self):
+        self.assertEquals(self.square(2), 4)
 
     # add requests
-    def test_add_car(self):
-        self.license_plate = "AF5687"
-        self.car_color = "Beige"
-        self.is_dirty = True
-        self.hours_parked = 8
-        self.assertIsNot(
-            self.car_service.add_car(
-                self.license_plate,
-                self.car_color,
-                self.is_dirty,
-                self.hours_parked,
-            ),
-            None)
-        print(self.car_color)
+    # def test_add_car(self):
+    #     self.license_plate = "AF5687"
+    #     self.car_color = "Beige"
+    #     self.is_dirty = True
+    #     self.hours_parked = 8
+    #     self.assertIsNot(
+    #         self.car_service.add_car(
+    #             self.license_plate,
+    #             self.car_color,
+    #             self.is_dirty,
+    #             self.hours_parked,
+    #         ),
+    #         None)
+    #     print(self.car_color)
 
 
 if __name__ == '__main__':
