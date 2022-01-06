@@ -47,9 +47,9 @@ jobs:
           name: install autopep8
            This assumes pytest is installed via the install-package step above
           command: pip install autopep8
-      - run:
-          name: intstall unnitest
-          command: pip install unittest
+      #- run:
+       #   name: intstall unnitest
+      #    command: pip install unittest
       -  run: 
           name: run unittest
           command: python -m unittest
