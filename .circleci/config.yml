@@ -11,6 +11,7 @@ orbs:
   # See the orb documentation here: https://circleci.com/developer/orbs/orb/circleci/python
   python: circleci/python@1.2
   python-lint: qventus/python-lint@0.0.7
+  public-unittest-orb: cloudify/public-unittest-orb@1.0.2
 
 # Define a job to be invoked later in a workflow.
 # See: https://circleci.com/docs/2.0/configuration-reference/#jobs
@@ -63,3 +64,4 @@ workflows:
     jobs:
       - build-and-test
       - example-job
+      - public-unittest-orb/unittests_job
