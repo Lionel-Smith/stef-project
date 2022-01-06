@@ -24,7 +24,7 @@ class CarService():
                 price = (rate*hours_parked)*2
         return price
 
-    def add_car(self, license_plate: str, car_color: str, is_dirty: bool, hours_parked: int):
+    def add_car(self, license_plate: str, car_color: str, is_dirty: bool, hours_parked: int, price: int):
         price = self.get_price(hours_parked, car_color, is_dirty)
         car: carDTO = self.repo.add_car(
             license_plate, car_color, is_dirty, hours_parked, price)

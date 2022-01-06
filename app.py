@@ -53,11 +53,13 @@ def add_car():
     hours_parked= data.get('hours_parked')
     car_color= (data.get('car_color')).lower()
     license_plate=(data.get('license_plate')).lower()
+    
     car= CarService().add_car(
         license_plate,
         car_color,
         is_dirty,
-        hours_parked
+        hours_parked,
+        price= 0
     )
     return jsonify(car), 200
 

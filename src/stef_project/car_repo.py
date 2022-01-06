@@ -20,8 +20,7 @@ class CarRepo():
         db.session.commit()
         car: CarModel = CarModel.query.filter(
             CarModel.license_plate == license_plate).first()
-        car_DTO = carDTO(car.license_plate, car.car_color,
-                         car.is_dirty, car.hrs_parked, car.price)
+        car_DTO = carDTO(car.license_plate, car.car_color, car.is_dirty, car.hrs_parked, car.price)
         return car_DTO
 
     def update_car(self, license_plate, car_color, is_dirty, hours_parked,  price):
@@ -33,8 +32,7 @@ class CarRepo():
         car.price = price
         db.session.add(car)
         db.session.commit()
-        car_DTO = carDTO(car.license_plate, car.car_color,
-                         car.is_dirty, car.hrs_parked, car.price)
+        car_DTO = carDTO(car.license_plate, car.car_color, car.is_dirty, car.hrs_parked, car.price)
         return car_DTO
 
     def remove_car(license_plate) -> None:

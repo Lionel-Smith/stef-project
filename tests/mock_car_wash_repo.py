@@ -57,7 +57,7 @@ class MockCarWashRepo:
             car.price)
         return car_DTO
 
-    def remove_car(license_plate) -> None:
+    def remove_car(self, license_plate) -> None:
         car = CarModel.query.filter(
             CarModel.license_plate == license_plate).delete()
         db.session.commit()
