@@ -35,19 +35,19 @@ jobs:
     # Here we're making sure we use just use the system-wide pip. By default it uses the project root's requirements.txt.
     # Then run your tests!
     # CircleCI will report the results back to your VCS provider.
-    steps:
-      - checkout
-      - python/install-packages:
-          pkg-manager: pip
+    #steps:
+      #- checkout
+      #- python/install-packages:
+          #pkg-manager: pip
           # app-dir: ~/project/package-directory/  # If you're requirements.txt isn't in the root directory.
           # pip-dependency-file: test-requirements.txt  # if you have a different name for your requirements file, maybe one that combines your runtime and test requirements.
         #- run: 
         #    name: install autopep8
         #     This assumes pytest is installed via the install-package step above
         #    command: pip install autopep8
-         - run:
-            name: intstall unnitest
-            command: pip install unittest
+        #- run:
+          #  name: intstall unnitest
+          #  command: pip install unittest
            # run: 
            #  name: run unittest
            #  command: python -m unittest
