@@ -16,11 +16,12 @@ class MockCarWashService(unittest.TestCase):
         self.hours_parked = 12
         self.price = 0
    
-    def square(n):
-        return n*n
+    # def square(self, n:int):
+    #     return n*n
 
-    def test_square(self):
-        self.assertEquals(self.square(2), 4)
+    # def test_square(self, n:int):
+    #     n=2
+    #     self.assertEquals(self.square(n), 4)
 
     # add requests
     # def test_add_car(self):
