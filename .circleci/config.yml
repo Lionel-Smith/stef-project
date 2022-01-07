@@ -50,9 +50,9 @@ jobs:
       #- run:
        #   name: intstall unnitest
       #    command: pip install unittest
-      -  run: 
-          name: run unittest
-          command: python -m unittest
+      # -  run: 
+      #     name: run unittest
+      #     command: python -m unittest
       - run: 
           name: run autopep8
           command: autopep8 --in-place --recursive src
